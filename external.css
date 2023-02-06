@@ -1,0 +1,132 @@
+body {
+  font-family: sans-serif;
+  background-image: url(anime.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  float: left;
+  background-repeat: no-repeat;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 400px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+tr:nth-child(odd) {
+  background-color: lavender;
+}
+tr:nth-child(even) {
+  background-color: teal;
+}
+
+a:link,
+a:visited {
+  color: white;
+  padding: 9px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover,
+a:active {
+  background-color: darkblue;
+}
+
+img {
+  height: auto;
+  width: 120px;
+}
+.headers {
+  margin-left: 1200px;
+  float: right;
+}
+
+/* this was not made by me i found a free website that lets you use thier borders for*/
+.box {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 180px;
+  color: white;
+  font-family: "Raleway";
+  font-size: 2.5rem;
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.center {
+  position: absolute;
+  bottom: 400px;
+  left: 900px;
+}
+
+#listone {
+  background-color: #f7cac9;
+  float: right;
+  padding-right: 100px;
+  margin-top: 150px;
+  margin-right: 300px;
+}
+#listtwo {
+  background-color: #f7cac9;
+  float: right;
+  padding-right: 100px;
+  margin-top: 150px;
+  margin-right: 200px;
+}
+
+#list3 {
+  background-color: #f7cac9;
+  float: right;
+  padding-right: 100px;
+  margin-top: 150px;
+  margin-right: 200px;
+}
+
+#qoute {
+  background-color: #f7cac9;
+  float: right;
+  padding-right: 10px;
+  margin-top: 150px;
+  margin-right: 400px;
+}
